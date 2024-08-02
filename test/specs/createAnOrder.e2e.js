@@ -49,6 +49,8 @@ describe('Create an order', () => {
         const linkButton = await $(page.linkButton);
         await linkButton.waitForDisplayed();
         await linkButton.click();
+        await expect(paymentMethodButton).toBeExisting();
+
     });
 
     it('should write a message to the driver', async () => {
@@ -64,6 +66,8 @@ it('should order a blanket and handkerchiefs', async () => {
     await blanketAndHandkerchiefButton.waitForDisplayed();
     await blanketAndHandkerchiefButton.click();
     const blanketSwitch = await $(page.blanketSwitch);
+    await expect(blanketSwitch).toBeChecked();
+
 });
 
 it('should order 2 ice creams', async () => {
