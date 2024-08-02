@@ -23,7 +23,7 @@ module.exports = {
     smartButton: '.smart-button',
      // Modals
     phoneNumberModal: '.modal',
-    carSearchModal: '.order-header',
+    carSearchModal: '.order-body',
     countdown: '.number',
     driverInfo: '.order-button',
     // Functions

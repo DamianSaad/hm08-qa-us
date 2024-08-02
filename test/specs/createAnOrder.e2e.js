@@ -76,9 +76,6 @@ it('should order 2 ice creams', async () => {
 });
 
 it('should activate the car search modal', async () => {
-    const callATaxiButton = await $(page.callATaxiButton);
-    await callATaxiButton.waitForDisplayed();
-    await callATaxiButton.click();
     const smartButton = await $(page.smartButton);
     await smartButton.waitForDisplayed();
     await smartButton.click();
